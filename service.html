@@ -31,6 +31,59 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 25px;
+  position: relative; /* Add this for relative positioning */
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity and color as needed */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  opacity: 0; /* Hide the overlay by default */
+  transition: 0.5s; /* Add a smooth transition effect */
+}
+
+/* Show the overlay on hover */
+.column:hover .overlay {
+  opacity: 1;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+  </style>
+
+
 
 </head>
 
@@ -90,6 +143,61 @@
     <!-- end header section -->
   </div>
 
+ <!-- Products section -->
+ 
+    
+ <section class="service_section layout_padding">
+  <div class="service_container">
+    <div class="container ">
+      <div class="heading_container">
+        <h2>
+          Products
+        </h2>
+        <p>
+          There are many variations of Generators
+        </p>
+      </div>
+     
+          
+            
+              <div class="row">
+                  <div class="column">
+                    <a href="./Generator Details.html">
+                    <div class="overlay">Text for Image 1</div>
+                    <img src="../sideview.JPG" alt="Snow" style="width:100%">
+                    </a>
+                  </div>
+                  <div class="column">
+                    <div class="overlay">Text for Image 1</div>
+                    <img src="../sideview.JPG" alt="Forest" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <div class="overlay">Text for Image 1</div>
+                    <img src="../sideview.JPG" alt="Mountains" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <div class="overlay">Text for Image 1</div>
+                    <img src="../sideview.JPG" alt="Mountains" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <div class="overlay">Text for Image 1</div>
+                    <img src="../sideview.JPG" alt="Mountains" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <div class="overlay">Text for Image 1</div>
+                    <img src="../sideview.JPG" alt="Mountains" style="width:100%">
+                  
+                </div>
+              </a>
+            
+          
+      </div>
+    </div>
+  </div>
+</section>
+  
+ 
+   
 
   <!-- service section -->
 
